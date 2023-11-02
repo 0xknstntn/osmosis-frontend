@@ -434,6 +434,46 @@ export const testnetChainInfos: SimplifiedChainInfo[] = [
     explorerUrlToTx:
       "https://pingpub.xion-testnet-1.burnt.com/xion-testnet-1/tx/{txHash}",
   },
+  {
+    rpc: "https://api-rpc.qubedao.com/api",
+    rest: "https://api-rest.qubedao.com/api",
+    chainId: "qube-2",
+    chainName: "Qube Testnet",
+    bip44: {
+      coinType: 560,
+    },
+    bech32Config: Bech32Address.defaultBech32Config("qube"),
+    currencies: [
+      {
+        coinDenom: "QUBE",
+        coinMinimalDenom: "uqube",
+        coinDecimals: 6,
+        coinImageUrl: "https://apricot-grubby-booby-751.mypinata.cloud/ipfs/QmfJEqcjheC56qrs9cpW86RaGUW2xsJrB1suGWoZJScbXc",
+        isStakeCurrency: true,
+      },
+      {
+        coinDenom: "USQ",
+        coinMinimalDenom: "uusd",
+        coinDecimals: 6,
+        coinImageUrl: "https://apricot-grubby-booby-751.mypinata.cloud/ipfs/QmcfLWPcB5MXxzc21jBktVVgnuXoCWNE5t19MUmLtdWSuw",
+        coinGeckoId: "usd-coin",
+      },
+      {
+        coinDenom: "QUBE",
+        coinMinimalDenom: "uqube",
+        coinDecimals: 6,
+        coinImageUrl: "https://apricot-grubby-booby-751.mypinata.cloud/ipfs/QmfJEqcjheC56qrs9cpW86RaGUW2xsJrB1suGWoZJScbXc",
+        isFeeCurrency: true,
+        gasPriceStep: {
+          low: 0.01,
+          average: 0.025,
+          high: 0.03,
+        },
+      },
+    ],
+    features: ["ibc-transfer", "ibc-go"],
+    explorerUrlToTx: "https://explorer.qubedao.com/qube/tx/{txHash}",
+  },
 ];
 
 export const mainnetChainInfos: SimplifiedChainInfo[] = [
