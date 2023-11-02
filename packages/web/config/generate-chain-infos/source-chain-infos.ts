@@ -445,25 +445,19 @@ export const testnetChainInfos: SimplifiedChainInfo[] = [
     bech32Config: Bech32Address.defaultBech32Config("qube"),
     currencies: [
       {
-        coinDenom: "QUBE",
-        coinMinimalDenom: "uqube",
-        coinDecimals: 6,
-        coinImageUrl: "https://apricot-grubby-booby-751.mypinata.cloud/ipfs/QmfJEqcjheC56qrs9cpW86RaGUW2xsJrB1suGWoZJScbXc",
-        isStakeCurrency: true,
-      },
-      {
         coinDenom: "USQ",
         coinMinimalDenom: "uusd",
         coinDecimals: 6,
-        coinImageUrl: "https://apricot-grubby-booby-751.mypinata.cloud/ipfs/QmcfLWPcB5MXxzc21jBktVVgnuXoCWNE5t19MUmLtdWSuw",
+        coinImageUrl: "/tokens/usq.svg",
         coinGeckoId: "usd-coin",
       },
       {
         coinDenom: "QUBE",
         coinMinimalDenom: "uqube",
         coinDecimals: 6,
-        coinImageUrl: "https://apricot-grubby-booby-751.mypinata.cloud/ipfs/QmfJEqcjheC56qrs9cpW86RaGUW2xsJrB1suGWoZJScbXc",
+        coinImageUrl: "/tokens/qube.svg",
         isFeeCurrency: true,
+        isStakeCurrency: true,
         gasPriceStep: {
           low: 0.01,
           average: 0.025,
