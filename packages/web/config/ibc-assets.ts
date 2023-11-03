@@ -2300,6 +2300,13 @@ export const IBCAssetInfos: (IBCAsset & {
           "https://starscan.io/fxbridge?from=fxcore&to=osmosis&token=FX",
         isVerified: true,
       },
+      {
+        counterpartyChainId: "qube-2",
+        sourceChannelId: "channel-4156",
+        destChannelId: "channel-3306",
+        coinMinimalDenom: "uusd",
+        isVerified: true,
+      },
     ].filter((ibcAsset) => {
       // validate IBC asset config
       if (
