@@ -446,7 +446,7 @@ export const testnetChainInfos: SimplifiedChainInfo[] = [
     currencies: [
       {
         coinDenom: "USQ",
-        coinMinimalDenom: "ibc/EC0E35F19849E586959A19679686BFD1CDA84CC053A691486D7826939DDACB30",
+        coinMinimalDenom: "uusd",
         coinDecimals: 6,
         coinImageUrl: "/tokens/usq.svg",
         coinGeckoId: "usd-coin",
