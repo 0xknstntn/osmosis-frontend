@@ -440,7 +440,7 @@ export const testnetChainInfos: SimplifiedChainInfo[] = [
     chainId: "qube-2",
     chainName: "Qube Testnet",
     bip44: {
-      coinType: 560,
+      coinType: 60,
     },
     bech32Config: Bech32Address.defaultBech32Config("qube"),
     currencies: [
